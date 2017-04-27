@@ -49,9 +49,6 @@ var evaluateTriangle = function(side1, side2, side3) {
   }
 }
 
-
-
-
 //User Interface Logic
 $(document).ready(function() {
   $("form").submit(function(event) {
@@ -61,18 +58,6 @@ $(document).ready(function() {
     var side3 = parseFloat($("input[name='input3']").val());
 
     var triangleType = evaluateTriangle(side1, side2, side3);
-    console.log (triangleType);
+    $("#text-output").text("Your triangle is " + triangleType + ".");
   });
-
-
-
-
-
-
-
-
-
-
-
-
 });
